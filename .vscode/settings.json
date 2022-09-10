@@ -1,0 +1,9 @@
+{
+    "errorLens.onSave": false,
+    "eslint.alwaysShowStatus": false,
+    "eslint.format.enable": false,
+    "eslint.lintTask.enable": false,
+    "eslint.run": "onType",
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true
+}

@@ -6,7 +6,7 @@ mongoose.connect(config.DB.URI);
 
 const connection = mongoose.connection;
 
-connection.once('open',() => {
+connection.once('open', () => {
     console.log('Mongodb connection stablished')
 });
 
