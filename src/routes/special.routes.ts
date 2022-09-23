@@ -1,6 +1,6 @@
 import { Router } from 'express'
 const router = Router();
-import { getPostulantById } from '../controllers/postulant.controller';
+import { getPostulantById, getPostulantStateById } from '../controllers/postulant.controller';
 import passport from 'passport'
 
 router.get('/whoami', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -12,5 +12,7 @@ router.get('/whoami', passport.authenticate('jwt', { session: false }), (req, re
 })
 
 router.get('/postulant/:id', passport.authenticate('jwt', { session: false }), getPostulantById)
+
+router.get('/postulant/:id/state', passport.authenticate('jwt', { session: false }), getPostulantStateById)
 
 export default router;
